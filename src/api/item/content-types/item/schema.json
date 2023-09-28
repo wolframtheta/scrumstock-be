@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "items",
+  "info": {
+    "singularName": "item",
+    "pluralName": "items",
+    "displayName": "Item",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "img": {
+      "type": "text"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "cost": {
+      "type": "decimal"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "sizes": {
+      "type": "json"
+    },
+    "store": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::store.store"
+    },
+    "typeProduct": {
+      "type": "enumeration",
+      "enum": [
+        "sizes",
+        "normal"
+      ]
+    }
+  }
+}
