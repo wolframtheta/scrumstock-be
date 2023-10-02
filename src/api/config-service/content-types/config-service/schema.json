@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "config_services",
+  "info": {
+    "singularName": "config-service",
+    "pluralName": "config-services",
+    "displayName": "ConfigService"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "value": {
+      "type": "json"
+    },
+    "key": {
+      "type": "string"
+    }
+  }
+}
