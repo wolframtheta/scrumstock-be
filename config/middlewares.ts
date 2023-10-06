@@ -11,12 +11,16 @@
 //   'strapi::public',
 // ];
 
-module.exports = {
-  //...
-  settings: {
-    cors: {
-      origin: ['*'], //allow all origins
-      headers: ['*'], //allow all headers
+export default [
+  // ...
+  {
+    name: 'strapi::cors',
+    config: {
+      origin: ['*'],
+      methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
+      headers: ['*'],
+      keepHeaderOnError: true,
     },
   },
-};
+  // ...
+]
